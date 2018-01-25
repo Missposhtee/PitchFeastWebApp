@@ -1,18 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import{AngularFireModule,FirebaseAppConfig}  from 'angularfire2';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {AngularFireAuthModule} from 'angularfire2/auth';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {environment}  from '../environments/environment';
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { EventsComponent } from './events/events.component';
+import  {MakePaymentComponent} from './payments/make-payment/make-payment.component';
+
+
 
 import { AuthService } from './services/auth.service';
+import {EventsService} from './services/events.service';
+import {PaymentService} from './services/payment.service';
+
 
 
 export const routes = [
@@ -26,8 +35,9 @@ export const routes = [
   },
   {
     path: 'events',
-    component: EventsComponent
+    component: EventsComponent, 
   }
+
 ];
 
 
@@ -48,7 +58,9 @@ export const routes = [
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    EventsComponent
+    EventsComponent,
+    MakePaymentComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -57,10 +69,20 @@ export const routes = [
     ReactiveFormsModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    BrowserAnimationsModule,
+    
+
+
+    
+
+
   ],
   providers: [
-    AuthService
+    AuthService,
+    EventsService,
+    PaymentService,
+  
   ],
   bootstrap: [AppComponent]
 })

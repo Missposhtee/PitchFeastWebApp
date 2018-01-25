@@ -1,3 +1,96 @@
-<p>
-  events works!
-</p>
+<div>
+
+
+  <div class="events">
+    <img class="img" src="http://sv2109.com/sites/default/files/field/image/bigstock-events-7444309_1.jpg">
+  </div>
+
+
+  <div>
+    <iframe class="video" width="798" height="449" src="https://www.youtube.com/embed/2NIBFWQYNqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+
+</div>
+
+
+
+<h1 class="welcome">Welcome To PitchFeast {{nameToDisplay}}</h1>
+
+
+
+<!-- Events cards -->
+
+
+<div class="card-deck">
+
+
+
+  <div class="card">
+
+    <img class="card-img-top" src="../../assets/images/pf5.jpg" alt="Card image cap">
+
+    <div class="card-body">
+      <div>
+        <h5 class="card-title">PitchFeast Events Donation</h5>
+      </div>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longehhhhhhcccfg7yr.</p>
+    </div>
+
+    <button (click)="handlePayment()" class="button">Purchase Ticket</button>
+
+    <div class="card-footer">
+      <a class="btn btn-primary" href=" https://www.meetup.com/PitchFeast-Indy/" role="button">Event Details</a>
+    </div>
+
+  </div>
+
+
+
+  <div class="card">
+
+    <img class="card-img-top" src="data:image/png;base64,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" alt="Card image cap">
+
+    <div class="card-body">
+      <h5 class="card-title">The Start Up Ladies</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+
+    <button (click)="handlePayment()" class="button">Purchase Ticket</button>
+
+    <div class="card-footer">
+      <a class="btn btn-primary" href=" https://www.meetup.com/PitchFeast-Indy/" role="button">Event Details</a>
+    </div>
+
+  </div>
+
+
+
+  <div class="card">
+    <img class="card-img-top" src="../../assets/images/lemonade.png" alt="Card image cap">
+
+
+    <div class="card-body">
+      <h5 class="card-title">Lemonade Day PitchFeast</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer
+        content than the first to show that equal height action.</p>
+    </div>
+
+    <button (click)="handlePayment()" class="button">
+      Purchase Ticket
+    </button>
+
+
+    <div class="card-footer">
+      <a class="btn btn-primary" href=" https://www.meetup.com/PitchFeast-Indy/" role="button">Event Details</a>
+    </div>
+
+
+  </div>
+
+
+</div>
+
+
+
+<button (click)="logout()" class="log">LogOut</button>

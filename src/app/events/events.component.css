@@ -1,0 +1,82 @@
+.card-deck {
+  padding: 10ch;
+  margin-top: -5ch;
+  clear: both;
+}
+
+.card {
+  border: 2px solid black;
+  height: 700px;
+}
+
+.events {
+  height: 250px;
+  width: 150px;
+}
+
+
+/* .container2{
+    background: #DFDFDF;
+    clear:both;
+    margin-top: 5ch;; 
+*/
+
+
+.img {
+  width: 1000px;
+  margin-top: -15ch;
+  padding: 19ch;
+}
+
+.video {
+  float: right;
+  height: 300px;
+  width: 500px;
+  margin-right: 10ch;
+  margin-top: -15ch;
+}
+
+.card-title {
+  background: #61bd4f;
+  height: 48px;
+  text-align: center;
+  padding: 1ch;
+}
+
+.card-img-top {
+  height: 300px;
+}
+
+.h5 {
+  color: aliceblue;
+}
+
+.card-text {
+  height: 200px;
+}
+
+.welcome {
+  font-style: italic;
+  font-size: 20px;
+  margin-left: -40ch;
+  text-align: center;
+  margin-top: -14ch;
+  color: red;
+}
+
+.button {
+  color: white;
+  background-color: orange;
+}
+
+.log {
+  color: black;
+  background: #61bd4f;
+  margin-left: 5ch;
+  margin-bottom: 2ch;
+  width: 130px;
+}
+
+.card-footer {
+  text-align: center;
+}

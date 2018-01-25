@@ -1,0 +1,68 @@
+#pitch-image {
+  width: 380px;
+  height: 152px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-left: 320px;
+}
+
+.menu {
+  position: absolute;
+  top: -102px;
+  width: 602px;
+  height: 66px;
+  left: 750px;
+}
+
+.menuItem {
+  float: left;
+  list-style-type: none;
+  margin: 10px;
+  border-right: 1px solid black;
+}
+
+.menuItem:last-child {
+  border-right: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#TEXT {
+  font-size: 21px;
+  position: relative;
+  text-align: center;
+  margin-top: -3ch;
+  padding: 0.1px;
+  line-height: 0ch;
+  left: 0.1px;
+}
+
+#text2 {
+  color: red;
+}
+
+#text3 {
+  color: red;
+}
+
+.image1 {
+  width: 53px;
+  height: 53px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+#LnkBr4-rgc {
+  margin-right: -30px;
+  top: 2px;
+  margin-top: -8ch
+}
+
+.lb1imageItem {
+  float: right;
+  list-style-type: none;
+  margin-left: 10px
+}

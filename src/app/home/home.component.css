@@ -1,0 +1,22 @@
+#myform1 {
+  width: 150px;
+}
+
+#myform2 {
+  width: 150px;
+}
+
+.container {
+  margin-top: 15ch
+}
+
+.btn btn-primary {
+  color: #0275d8;
+}
+
+.container {
+  background: #DFDFDF;
+  height: 400px;
+  margin-bottom: 2ch;
+  margin-top: 7ch;
+}
