@@ -4,22 +4,25 @@
   -o-object-fit: cover;
   object-fit: cover;
   margin-top: 10px;
-  margin-left: 320px;
+  margin-left: 180px;
 }
 
 .menu {
   position: absolute;
-  top: -102px;
+  top: -120px;
   width: 602px;
   height: 66px;
-  left: 750px;
+  left: 550px;
 }
 
 .menuItem {
   float: left;
   list-style-type: none;
-  margin: 10px;
+  padding:22px;
   border-right: 1px solid black;
+  font-size: 14px;
+  color:none;
+
 }
 
 .menuItem:last-child {
@@ -27,7 +30,7 @@
 }
 
 a {
-  text-decoration: none;
+  color:none;
 }
 
 #TEXT {
@@ -58,11 +61,19 @@ a {
 #LnkBr4-rgc {
   margin-right: -30px;
   top: 2px;
-  margin-top: -8ch
+  margin-top: -4ch
 }
 
 .lb1imageItem {
   float: right;
   list-style-type: none;
   margin-left: 10px
+}
+
+.menuItemHref:hover{
+ color: green;
+}
+
+#SITE_HEADER{
+  height: 30px;
 }

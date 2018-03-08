@@ -4,6 +4,7 @@
   font-size: 24px;
   text-align: center;
   height: 150px;
+  padding-top: 2ch
 }
 
 #text1 {
@@ -15,10 +16,12 @@
   height: 150px;
 }
 
-hr {
-
-}
 
 #text2 {
   font-size: 15px;
+  right:12px;
+}
+.footer{
+  margin-top: 1ch;
+  height:50px;
 }

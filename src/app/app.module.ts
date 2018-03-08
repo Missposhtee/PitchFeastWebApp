@@ -21,21 +21,26 @@ import  {MakePaymentComponent} from './payments/make-payment/make-payment.compon
 import { AuthService } from './services/auth.service';
 import {EventsService} from './services/events.service';
 import {PaymentService} from './services/payment.service';
+import { AuthGuard } from './core/auth.guard';
 
 
 
 export const routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
+      
   },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    
+    
   },
   {
     path: 'events',
     component: EventsComponent, 
+    canActivate:[AuthGuard]
   }
 
 ];
@@ -82,6 +87,7 @@ export const routes = [
     AuthService,
     EventsService,
     PaymentService,
+    AuthGuard,
   
   ],
   bootstrap: [AppComponent]

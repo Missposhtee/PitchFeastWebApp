@@ -1,5 +1,6 @@
 #myform1 {
   width: 150px;
+  left:-1px;
 }
 
 #myform2 {
@@ -15,8 +16,16 @@
 }
 
 .container {
-  background: #DFDFDF;
+  
   height: 400px;
   margin-bottom: 2ch;
   margin-top: 7ch;
+  width:100ch;
+}
+
+.section2{
+  background: #DFDFDF;
+  height: 400px;
+  padding-top: 1ch;
+  
 }
